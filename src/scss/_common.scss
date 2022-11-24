@@ -10,6 +10,58 @@ $colorRed: #b01e1e;
 $colorLightRed: #ce7f7f;
 $colorDarkRed: #881616;
 
+// == FONTS ==
+
+@font-face {
+	font-family: 'gothamblack';
+	src: url('./fonts/gotham-black-webfont.woff2') format('woff2'),
+		url('./fonts/gotham-black-webfont.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'gothambold';
+	src: url('./fonts/gothambold-webfont.woff2') format('woff2'),
+		url('./fonts/gothambold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'gothambook';
+	src: url('./fonts/gothambook-webfont.woff2') format('woff2'),
+		url('./fonts/gothambook-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'gothamlight';
+	src: url('./fonts/gothamlight-webfont.woff2') format('woff2'),
+		url('./fonts/gothamlight-webfont.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'righteousregular';
+	src: url('./fonts/righteous-regular-webfont.woff2') format('woff2'),
+		url('./fonts/righteous-regular-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+// == FONTS ==
+
 html,
 body {
 	height: 100%;
@@ -17,8 +69,8 @@ body {
 
 body {
 	color: $colorBlack;
-	font-size: 14px;
-	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-family: 'righteousregular';
 	line-height: 1.25;
 }
 
