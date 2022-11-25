@@ -26,7 +26,8 @@ textarea {
 	width: 100%;
 	font-size: 14px;
 	font-family: Roboto, sans-serif;
-	border: 1px solid $colorGrey;
+	// border: 1px solid $colorGrey;
+	border: 0;
 	transition: all .3 ease;
 	padding: 0 20px;
 	appearance: none;
@@ -77,6 +78,7 @@ textarea {
 
 .has {
 	&-error {
+
 		input,
 		textarea {
 			color: $colorRed !important;
@@ -101,6 +103,7 @@ textarea {
 	}
 
 	&-success {
+
 		input,
 		textarea {
 			color: $colorGreen !important;
@@ -150,7 +153,7 @@ textarea {
 		width: inherit;
 		height: inherit;
 
-		& ~ label {
+		&~label {
 			position: relative;
 			display: inline-block;
 			min-height: 20px;
@@ -200,10 +203,8 @@ textarea {
 		}
 
 		&:disabled {
-			& ~ label {
-				&:before{
-
-				}
+			&~label {
+				&:before {}
 
 				&:after {
 					opacity: 0;
@@ -212,10 +213,8 @@ textarea {
 		}
 
 		&:checked {
-			& ~ label {
-				&:before{
-
-				}
+			&~label {
+				&:before {}
 
 				&:after {
 					opacity: 1;
@@ -223,10 +222,8 @@ textarea {
 			}
 
 			&:disabled {
-				& ~ label {
-					&:before{
-
-					}
+				&~label {
+					&:before {}
 
 					&:after {
 						opacity: .2;
@@ -237,7 +234,8 @@ textarea {
 	}
 
 	[type="radio"] {
-		& ~ label {
+		&~label {
+
 			&:before,
 			&:after {
 				border-radius: 50%;
@@ -245,19 +243,18 @@ textarea {
 		}
 
 		&:checked {
-			& ~ label {
-				&:before{
-
-				}
+			&~label {
+				&:before {}
 			}
 		}
 	}
 
 	&.has {
 		&-error {
+
 			[type="checkbox"],
 			[type="radio"] {
-				& ~ label {
+				&~label {
 					color: $colorRed !important;
 
 					&:before {
