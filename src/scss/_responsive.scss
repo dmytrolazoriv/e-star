@@ -1,9 +1,34 @@
-@media screen and (max-width: 1199px){
-
+@media screen and (max-width: 1199px) {
+	.nav-link {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
-@media screen and (max-width: 991px){
 
+@media screen and (max-width: 991px) {
+	.demo-item {
+		position: static;
+		// bottom: 14px;
+		// right: -112px;
+	}
+
+	.navbar-nav__socials {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 25px;
+		/* margin-right: 85px; */
+		margin: 0 auto;
+	}
+
+	.navbar-collapse {
+		margin-top: 25px;
+	}
 }
-@media screen and (max-width: 767px){
 
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 375px) {
+	.navbar-brand {
+		margin-bottom: 25px;
+	}
 }
